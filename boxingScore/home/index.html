@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/popUp/popUp.css" />
+  </head>
+  <body>
+    <div class="overlay" id="overlay">
+      <div class="popup">
+        <button class="close-btn" onclick="closePopup()">X</button>
+        <h2>Scoring MMA and Boxing Fights</h2>
+        <h3>MMA</h3>
+        <p>
+          Scoring an MMA fight involves assessing each round independently using
+          the 10-Point Must System. Judges evaluate striking, grappling, octagon
+          control, and defense to determine the winner of each round. The
+          fighter who dominates in these areas earns 10 points, while the
+          opponent typically receives 9 points or less. Overall, judges
+          prioritize effective techniques, damage inflicted, control, and
+          aggression. The fighter with the highest total score wins the fight,
+          with draws possible if rounds are evenly contested.
+        </p>
+
+        <h3>Boxing</h3>
+        <p>
+          Scoring a boxing match uses the 10-Point Must System, where judges
+          award each round to the boxer who demonstrates superior punching, ring
+          control, and defense. The winner of each round typically receives 10
+          points, while the opponent gets 9 points or less. Clean and impactful
+          punching is prioritized, with effective ring generalship and defense
+          also considered. The boxer with the highest total score wins the
+          fight, with draws possible if rounds are evenly contested.
+        </p>
+      </div>
+    </div>
+
+    <div class="learnBtn">
+      <button class="learn" onclick="openPopup()">
+        Learn How to Score a Fight
+      </button>
+    </div>
+
+    <main>
+      <div id="container1">
+        <div id="fighter1" class="fighter">
+          <div id="label1">
+            <label>Fighter A <input id="fighterA" /></label>
+            <button id="saveBtn1">Save</button>
+            <button id="clearBtn1" class="clearBtn1">Clear</button>
+          </div>
+
+          <div id="output1"></div>
+
+          <div class="listContainer">
+            <ul class="list1">
+              <li>Points</li>
+              <li>DEDS</li>
+              <li>Total</li>
+            </ul>
+          </div>
+
+          <div id="table1" class="scorecard">
+            <table class="score-table">
+              <tr>
+                <td><input type="number" class="rw1Points" id="rw1" /></td>
+                <td><input type="number" class="rw1Deds" id="rw1" /></td>
+                <td><input class="round1" id="rw1" /></td>
+                <td>Round 1</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw2Points" id="rw1" /></td>
+                <td><input type="number" class="rw2Deds" id="rw1" /></td>
+                <td><input class="round2" id="rw1" /></td>
+                <td>Round 2</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw3Points" id="rw1" /></td>
+                <td><input type="number" class="rw3Deds" id="rw1" /></td>
+                <td><input class="round3" id="rw1" /></td>
+                <td>Round 3</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw4Points" id="rw1" /></td>
+                <td><input type="number" class="rw4Deds" id="rw1" /></td>
+                <td><input class="round4" id="rw1" /></td>
+                <td>Round 4</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw5Points" id="rw1" /></td>
+                <td><input type="number" class="rw5Deds" id="rw1" /></td>
+                <td><input class="round5" id="rw1" /></td>
+                <td>Round 5</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw6Points" id="rw1" /></td>
+                <td><input type="number" class="rw6Deds" id="rw1" /></td>
+                <td><input class="round6" id="rw1" /></td>
+                <td>Round 6</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw7Points" id="rw1" /></td>
+                <td><input type="number" class="rw7Deds" id="rw1" /></td>
+                <td><input class="round7" id="rw1" /></td>
+                <td>Round 7</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw8Points" id="rw1" /></td>
+                <td><input type="number" class="rw8Deds" id="rw1" /></td>
+                <td><input class="round8" id="rw1" /></td>
+                <td>Round 8</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw9Points" id="rw1" /></td>
+                <td><input type="number" class="rw9Deds" id="rw1" /></td>
+                <td><input class="round9" id="rw1" /></td>
+                <td>Round 9</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw10Points" id="rw1" /></td>
+                <td><input type="number" class="rw10Deds" id="rw1" /></td>
+                <td><input class="round10" id="rw1" /></td>
+                <td>Round 10</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw11Points" id="rw1" /></td>
+                <td><input type="number" class="rw11Deds" id="rw1" /></td>
+                <td><input class="round11" id="rw1" /></td>
+                <td>Round 11</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw12Points" id="rw1" /></td>
+                <td><input type="number" class="rw12Deds" id="rw1" /></td>
+                <td><input class="round12" id="rw1" /></td>
+                <td>Round 12</td>
+              </tr>
+              <tr>
+                <td id="fighterApoints">Grand Total</td>
+                <td id="totalA" colspan="2"></td>
+                <td><button id="fighterAscore">Score</button></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div id="fighter2" class="fighter">
+          <div id="label1">
+            <label>Fighter B <input id="fighterB" /></label>
+            <button id="saveBtn2">Save</button>
+            <button id="clearBtn2" class="clearBtn1">Clear</button>
+          </div>
+
+          <div id="output2"></div>
+
+          <div class="listContainer">
+            <ul class="list1">
+              <li>Points</li>
+              <li>DEDS</li>
+              <li>Total</li>
+            </ul>
+          </div>
+          <div id="table2" class="scorecard">
+            <table class="score-table">
+              <tr>
+                <td><input type="number" class="rw1PointsB" id="rw1" /></td>
+                <td><input type="number" class="rw1DedsB" id="rw1" /></td>
+                <td><input class="round1B" id="rw1" /></td>
+                <td>Round 1</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw2PointsB" id="rw1" /></td>
+                <td><input type="number" class="rw2DedsB" id="rw1" /></td>
+                <td><input class="round2B" id="rw1" /></td>
+                <td>Round 2</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw3PointsB" id="rw1" /></td>
+                <td><input type="number" class="rw3DedsB" id="rw1" /></td>
+                <td><input class="round3B" id="rw1" /></td>
+                <td>Round 3</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw4PointsB" id="rw1" /></td>
+                <td><input type="number" class="rw4DedsB" id="rw1" /></td>
+                <td><input class="round4B" id="rw1" /></td>
+                <td>Round 4</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw5PointsB" id="rw1" /></td>
+                <td><input type="number" class="rw5DedsB" id="rw1" /></td>
+                <td><input class="round5B" id="rw1" /></td>
+                <td>Round 5</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw6PointsB" id="rw1" /></td>
+                <td><input type="number" class="rw6DedsB" id="rw1" /></td>
+                <td><input class="round6B" id="rw1" /></td>
+                <td>Round 6</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw7PointsB" id="rw1" /></td>
+                <td><input type="number" class="rw7DedsB" id="rw1" /></td>
+                <td><input class="round7B" id="rw1" /></td>
+                <td>Round 7</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw8PointsB" id="rw1" /></td>
+                <td><input type="number" class="rw8DedsB" id="rw1" /></td>
+                <td><input class="round8B" id="rw1" /></td>
+                <td>Round 8</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw9PointsB" id="rw1" /></td>
+                <td><input type="number" class="rw9DedsB" id="rw1" /></td>
+                <td><input class="round9B" id="rw1" /></td>
+                <td>Round 9</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw10PointsB" id="rw1" /></td>
+                <td><input type="number" class="rw10DedsB" id="rw1" /></td>
+                <td><input class="round10B" id="rw1" /></td>
+                <td>Round 10</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw11PointsB" id="rw1" /></td>
+                <td><input type="number" class="rw11DedsB" id="rw1" /></td>
+                <td><input class="round11B" id="rw1" /></td>
+                <td>Round 11</td>
+              </tr>
+              <tr>
+                <td><input type="number" class="rw12PointsB" id="rw1" /></td>
+                <td><input type="number" class="rw12DedsB" id="rw1" /></td>
+                <td><input class="round12B" id="rw1" /></td>
+                <td>Round 12</td>
+              </tr>
+              <tr>
+                <td>Grand Total</td>
+                <td id="totalB" colspan="2"></td>
+                <td><button id="fighterBscore">Score</button></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
+    <script src="/popUp/popUp.js"></script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/popUp/popUp.css" />
+  </head>
+  <body>
+    <div class="overlay" id="overlay">
+      <div class="popup">
+        <button class="close-btn" onclick="closePopup()">X</button>
+        <h2>Scoring MMA and Boxing Fights</h2>
+        <h3>MMA</h3>
+        <p>
+          Scoring an MMA fight involves assessing each round independently using
+          the 10-Point Must System. Judges evaluate striking, grappling, octagon
+          control, and defense to determine the winner of each round. The
+          fighter who dominates in these areas earns 10 points, while the
+          opponent typically receives 9 points or less. Overall, judges
+          prioritize effective techniques, damage inflicted, control, and
+          aggression. The fighter with the highest total score wins the fight,
+          with draws possible if rounds are evenly contested.
+        </p>
+
+        <h3>Boxing</h3>
+        <p>
+          Scoring a boxing match uses the 10-Point Must System, where judges
+          award each round to the boxer who demonstrates superior punching, ring
+          control, and defense. The winner of each round typically receives 10
+          points, while the opponent gets 9 points or less. Clean and impactful
+          punching is prioritized, with effective ring generalship and defense
+          also considered. The boxer with the highest total score wins the
+          fight, with draws possible if rounds are evenly contested.
+        </p>
+      </div>
+    </div>
+
+    <div class="learnBtn">
+      <button class="learn" onclick="openPopup()">
+        Learn How to Score a Fight
+      </button>
+    </div>
+
+    <div class="newRound">
+      <button id="roundBtn" class="roundBtn">Add Rounds</button>
+      <button id="resetBtn" class="roundBtn">Reset</button>
+    </div>
+
+    <main>
+      <div id="container1">
+        <div id="fighter1" class="fighter">
+          <div id="label1">
+            <label>Fighter A <input id="fighterA" /></label>
+            <button id="saveBtn1">Save</button>
+            <button id="clearBtn1" class="clearBtn1">Clear</button>
+          </div>
+
+          <div id="output1"></div>
+
+          <div class="listContainer">
+            <ul class="list1">
+              <li>Points</li>
+              <li>DEDS</li>
+              <li>Total</li>
+            </ul>
+          </div>
+
+          <div id="table1" class="scorecard">
+            <table id="Fighter1" class="score-table">
+              <tr>
+                <td><input type="number" class="rw1Points" id="rw1" /></td>
+                <td><input type="number" class="rw1Deds" id="rw1" /></td>
+                <td><input class="round1" id="rw1" /></td>
+                <td>Round 1</td>
+              </tr>
+              <tr>
+                <td id="fighterApoints">Grand Total</td>
+                <td id="totalA" colspan="2"></td>
+                <td><button id="fighterAscore">Score</button></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div id="fighter2" class="fighter">
+          <div id="label1">
+            <label>Fighter B <input id="fighterB" /></label>
+            <button id="saveBtn2">Save</button>
+            <button id="clearBtn2" class="clearBtn1">Clear</button>
+          </div>
+
+          <div id="output2"></div>
+
+          <div class="listContainer">
+            <ul class="list1">
+              <li>Points</li>
+              <li>DEDS</li>
+              <li>Total</li>
+            </ul>
+          </div>
+          <div id="table2" class="scorecard">
+            <table id="Fighter2" class="score-table">
+              <tr>
+                <td><input type="number" class="rw1PointsB" id="rw1" /></td>
+                <td><input type="number" class="rw1DedsB" id="rw1" /></td>
+                <td><input class="round1B" id="rw1" /></td>
+                <td>Round 1</td>
+              </tr>
+
+              <tr>
+                <td>Grand Total</td>
+                <td id="totalB" colspan="2"></td>
+                <td><button id="fighterBscore">Score</button></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
+    <script src="/popUp/popUp.js"></script>
+    <script src="/home/fixUp.js"></script>
+  </body>
+</html>
